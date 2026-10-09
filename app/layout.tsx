@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Seminar Weka',
   description: 'Seminar',
     icons: {
-    icon: './assets/wk_logo.png',
+    icon: '/wk_logo.png',
   },
 };
 

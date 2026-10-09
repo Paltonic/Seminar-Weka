@@ -3,6 +3,9 @@ import './index.css'; // Pastikan file index.css Anda ada di folder app/
 export const metadata = {
   title: 'Seminar Weka',
   description: 'Seminar',
+    icons: {
+    icon: './assets/wk_logo.png',
+  },
 };
 
 export default function RootLayout({

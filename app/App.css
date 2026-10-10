@@ -1,2 +1,58 @@
 /* src/App.css */
 /* Global CSS variables or app-wide resets can go here */
+/* --- SHARED SCREEN LAYOUT --- */
+/* Class ini akan membuat semua layar (Home, Sem1, Sem2, Sem3) memiliki background & ukuran yang sama */
+.shared-screen-bg {
+  background-image: url('./assets/bgimage.jpeg'); /* Pastikan path ini benar */
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100dvh; 
+  max-width: 450px; 
+  margin: 0 auto; 
+  padding: 40px 20px; 
+  box-sizing: border-box; 
+  position: relative; /* Wajib relative agar tombol back bisa absolute */
+  overflow: hidden;
+}
+
+/* --- TOMBOL BACK (KIRI ATAS) --- */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  width: 45px;               
+  height: 45px;              
+  border-radius: 50%;        
+  padding: 0;                
+  display: flex;             
+  justify-content: center;
+  align-items: center;
+  line-height: 1;         
+  padding-bottom: 10px;      
+  font-size: 24px;
+  background: rgba(20, 30, 25, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(85, 239, 196, 0.25);
+  color: #55efc4; 
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.back-btn:hover {
+  background: rgba(85, 239, 196, 0.2);
+  transform: scale(1.05);
+}
+
+.back-btn:active {
+  transform: scale(0.95);
+}

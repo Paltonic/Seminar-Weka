@@ -1,7 +1,8 @@
-'use client' // Wajib ditambahkan di baris paling atas
+'use client'
 
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation' // Ganti onNavigate dengan router Next.js
+// 1. REMOVE useRouter import entirely!
+// import { useRouter } from 'next/navigation' 
+
 import './HomeScreen.css'
 
 import logoImg from './assets/wk_logo.png'
@@ -12,9 +13,8 @@ import sem3BtnImg from './assets/Sem3_button.png'
 const APP_VERSION = 'v1.0.0'
 const APP_CREDIT = '© 2026 Frederick Liko'
 
-export default function HomeScreen() {
-  const router = useRouter() // Inisialisasi router
-
+// 2. Accept the onNavigate prop from page.tsx
+export default function HomeScreen({ onNavigate }: { onNavigate: (screen: string) => void }) {
 
   return (
     <div className="home-container">
@@ -24,14 +24,16 @@ export default function HomeScreen() {
       </div>
 
       <div className="main-menu">
-        {/* Menggunakan router.push untuk pindah halaman */}
-        <button className="image-menu-btn" onClick={() => router.push('/play')}>
+        {/* 3. Change router.push to onNavigate */}
+        <button className="image-menu-btn" onClick={() => onNavigate('sem1')}>
           <img src={sem1BtnImg.src} alt="Play" className="menu-btn-img" />
         </button>
-        <button className="image-menu-btn" onClick={() => router.push('/play')}>
+        
+        <button className="image-menu-btn" onClick={() => onNavigate('sem2')}>
           <img src={sem2BtnImg.src} alt="Play" className="menu-btn-img" />
         </button>
-        <button className="image-menu-btn" onClick={() => router.push('/about')}>
+        
+        <button className="image-menu-btn" onClick={() => onNavigate('sem3')}>
           <img src={sem3BtnImg.src} alt="About" className="menu-btn-img" />
         </button>
       </div>

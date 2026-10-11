@@ -144,7 +144,7 @@ export default function Sem1({ onNavigate }: { onNavigate: (screen: string) => v
             >
               ←
             </button>
-            <h1 style={styles.title}>Kalkulator Keuangan</h1>
+            <h1 style={styles.title}>Financial Calculator</h1>
             <p style={styles.subtitle}>
               Hitung sisa uang per bulan, lalu lihat estimasi waktu dalam minggu,
               bulan, dan tahun.

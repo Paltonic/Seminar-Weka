@@ -203,7 +203,7 @@ export default function Sem1({ onNavigate }: { onNavigate: (screen: string) => v
             >
               ←
             </button>
-            <h1 style={styles.title}>Tes DISC</h1>
+            <h1 style={styles.title}>DISC Test</h1>
             <p style={styles.subtitle}>
               Beri nilai 4 (paling cenderung) sampai 1 (paling tidak cenderung)
               untuk setiap pernyataan. Setiap angka hanya bisa dipakai sekali per

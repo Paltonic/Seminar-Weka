@@ -26,7 +26,7 @@ export default function Sem1({ onNavigate }: { onNavigate: (screen: string) => v
             >
               ←
             </button>
-            <h1 style={styles.title}>Game Relasi</h1>
+            <h1 style={styles.title}>Relationship Game</h1>
             <p style={styles.subtitle}>
               Scan QR code di bawah untuk mulai bermain.
             </p>

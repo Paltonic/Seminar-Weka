@@ -10,7 +10,7 @@ import sem1BtnImg from './assets/Sem1_button.png'
 import sem2BtnImg from './assets/Sem2_button.png'
 import sem3BtnImg from './assets/Sem3_button.png'
 
-const APP_VERSION = 'v1.0.3'
+const APP_VERSION = 'v1.0.4'
 const APP_CREDIT = '© 2026 Frederick Liko'
 
 // 2. Accept the onNavigate prop from page.tsx
